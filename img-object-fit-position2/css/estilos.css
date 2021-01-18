@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 0.625em;
+    /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+figure {
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+}
+
+ul {
+    margin: 20px 40px;
+}
+
+@media (min-width: 700px) {
+    main {
+        display: flex;
+    }
+    img {
+        height: 350px;
+        object-fit: cover;
+    }
+}

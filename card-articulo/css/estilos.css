@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: lightgray;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+}
+
+.body-container {
+    background-color: white;
+    width: 65%;
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+.card-figure {
+    width: 100%;
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    display: block;
+}
+
+.figure-meta {
+    list-style-type: none;
+    color: white;
+    font-weight: bold;
+}
+
+.fmi1 {
+    background-color: #e74c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto 0;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+}
+
+.fmi2 {
+    background-color: #e74c3c;
+    display: inline-block;
+    padding: 10px 20px;    
+    text-align: center;
+    margin: auto 0;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+}
+
+.articulo-container {
+    margin: 15px 20px;
+    padding-bottom: 15px
+}
+
+.articulo-title {
+    font-size: 2.0rem;
+    margin-bottom: 10px
+}
+
+.articulo-subtitle {
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.articulo-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.link-leer-mas {
+    display: flex;
+    align-items: center;
+}
+
+.link-leer-mas,
+.link-leer-mas a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.link-leer-mas i {
+    padding-right: 10px;
+}

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: seagreen;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+    scroll-behavior: smooth;
+}
+
+#caja {
+	width: 250px;
+	margin: 50px auto;
+	padding: 20px;
+	position: relative;
+}
+
+#caja-content {
+	background-color: white;
+	color: seagreen;
+	padding: 20px;
+}
+
+/*TOP*/
+#caja::before {
+	content: "";
+	position:absolute;
+	top: 0;
+	left: 0;
+	border-top: 2px solid white;
+	width: 100%;
+	transition: 1s 3s;
+}
+
+/*BOTTOM*/
+#caja::after {
+	content: "";
+	position:absolute;
+	top: 100%;
+	left: 0;
+	border-top: 2px solid white;
+	width: 100%;
+	transition: 1s 1s;
+}
+
+/*LEFT*/
+#caja-content::before {
+	content: "";
+	position:absolute;
+	top: 0;
+	left: 0;
+	border-left: 2px solid white;
+	height: 100%;
+	transition: 1s;
+}
+
+/*RIGHT*/
+#caja-content::after {
+	content: "";
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	border-right: 2px solid white;
+	height: 100%;
+	transition: 1s 2s;
+}
+
+/*HOVER-TOP*/
+#caja:hover::before {
+	width: 0%;
+	left: 100%;
+	transition: 1s;
+}
+
+/*HOVER-RIGHT*/
+#caja-content:hover::after {
+	height: 0%;
+	transition: 1s 1s;
+}
+
+/*HOVER-BOTTOM*/
+#caja:hover::after {
+	width: 0%;
+	transition: 1s 2s;
+}
+
+
+/*HOVER-LEFT*/
+#caja-content:hover::before {
+	height: 0%;
+	transition: 1s 3s;
+}
+

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: ;
+    background-color: ;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+    scroll-behavior: smooth;
+}
+
+li {
+    transform: skewX(20deg);
+    border-right: 1px solid #fff;
+}
+
+
+span {
+    display: inline-block;
+    transform: skewX(-20deg);
+}
+a {
+    background-color: lightgray;
+
+    padding: 10px;
+    transform: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+    font-size: 1.5rem;
+    text-transform: uppercase
+}
+
+ul a:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 20px;
+}

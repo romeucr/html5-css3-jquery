@@ -1,0 +1,124 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Open Sans', sans-serif;
+     background-color: lightgrey;
+ }
+
+.body-container {
+    border: 1px solid;
+    width: 650px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+}
+
+header {
+    background-image: url(../img/guggenheim.jpg);
+    background-size: cover;
+    background-position: -20% 20%;
+    height: 130px;
+    border: 1px solid;
+}
+
+.h1-header {
+    padding: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 7px;
+}
+
+.menu-bar {
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 37px;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bar li {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+
+.body-content {
+    padding: 25px;
+    text-align: justify;    
+}
+
+.h1-body {
+    font-size: 25px;
+}
+
+.body-text {
+    margin: 15px 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+}
+
+
+
+/* contact html */
+.map {
+    display: inline-block;
+    float: left;
+    margin-right: 35px;
+    border: 1px solid;
+}
+
+.div-clear {
+    clear: both;
+}
+
+.contact-info {
+    margin-bottom: 120px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+/* About */
+h2 {
+    font-size: 15px;
+}
+
+.imgs-about {
+    margin: 15px 0;
+}
+
+.img-and-text:nth-of-type(odd) .imgs-about {
+    float: left;
+    margin-right: 15px;
+}
+
+.img-and-text:nth-of-type(even) .imgs-about {
+    float: right;
+    margin-left: 15px;
+}
+
+div.img-and-text {
+    padding: 15px 0;
+}
+
+h2.h2-about {
+    padding-bottom: 10px;
+    text-align: left;
+}

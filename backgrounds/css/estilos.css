@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+}
+
+#site-main section {
+    min-height: 100vh; /*torna o tamanho da caixa o tamanho da janela do navegador*/
+    background-size: cover; /*faz com q a bg-image se ajuste ao tamanho da caixa*/
+    background-position: center; /*centraliza a imagem*/
+    background-attachment: fixed; /*faz com que a imagem se posicione com relacao a janela do navegador e nao a caixa*/
+    display: flex; /*propriedades flex para centralizar e alinhas os textos*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid;
+}
+
+#section1 {
+    background-image: url(../img/bg-img-1.jpg);
+}
+
+#section2 {
+    background-image: url(../img/bg-img-2.jpg);
+}
+
+#section3 {
+    background-image: url(../img/bg-img-3.jpg);
+}
+
+#section4 {
+    background-image: url(../img/bg-img-4.jpg);
+}
+
+#section5 {
+    background-image: url(../img/bg-img-5.jpg);
+}
+
+#section1 {
+    background-image: url(../img/bg-img-1.jpg);
+}

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptati,vo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+section {
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 50vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#sec1 {
+    background-color: #28abb9;
+    background-image: url(../img/01.png);
+}
+
+#sec2 {
+    background-color: #2d6187;
+    background-image: url(../img/02.png);
+}
+
+#sec3 {
+    background-color: #effad3;
+    background-image: url(../img/03.png);
+}
+
+#sec4 {
+    background-color: #a8dda8;
+    background-image: url(../img/04.png);
+}
+
+#sec5 {
+    background-color: #d2d3c9;
+    background-image: url(../img/05.png);
+}
+
+#sec6 {
+    background-color: #0e918c;
+    background-image: url(../img/06.png);
+}
+
+#sec7 {
+    background-color: #f6830f;
+    background-image: url(../img/07.png);
+}
+
+#sec8 {
+    background-color: #bb2205;
+    background-image: url(../img/08.png);
+}

@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+    scroll-behavior: smooth;
+}
+
+header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+header h1 {
+   margin: 20px;
+}
+
+main {
+   margin-top: 20px;
+   font-size: 1.5rem;
+}
+
+dl {
+   width: 500px;
+   margin: 0 auto;
+   
+   display: flex;
+   flex-wrap: wrap;
+   border-radius: 5px 5px 5px 5px;
+}
+
+dt,
+dd {
+   padding: 10px;
+}
+
+dt {
+   background-color: lightgray;
+   cursor: pointer;
+   user-select: none;
+   max-width: 100px;
+   order: 1;
+   margin-right: 5px;
+   border-radius: 5px 5px 0 0;
+}
+
+dd {
+   background-color: darkgrey;
+   display: none;
+   order: 2;
+   background-color: indianred;
+   border-radius: 0 5px 5px 5px;
+}
+
+dt.active+dd {
+   display: block;
+   padding: 25px 10px;
+}
+
+dt.active {
+   background-color: indianred;
+   color: white;
+   font-weight: 500;
+}
+

@@ -1,0 +1,51 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: monospace ;
+ }
+
+h1 {
+    background-color: darkgray;
+    text-align: center;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+p {
+    margin: 15px;
+    text-align: center;
+}
+
+.bombi-on {
+    display: none;
+}
+
+@media (min-width: 700px) { /* mas que 700px */
+    main {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    p {
+        text-align: justify;
+    }
+    
+    .bombi-off {
+        display: none;
+    }
+
+    .bombi-on {
+        display: inline-block;
+    }
+    
+}

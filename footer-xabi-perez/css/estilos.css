@@ -1,0 +1,80 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+   scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+   color: #fff;
+   background-color: #2f2f2f;
+	font-size: 4.5rem;
+	text-align: center;
+}
+
+#mensaje {
+	font-weight: 600;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+div {
+	margin-top: 50px;
+}
+
+ul,
+div {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	align-items: flex-start;;
+}
+
+li {
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+	margin-top: 20px;
+	transition: 1s;
+}
+
+li:hover {
+	margin-top: 10px;
+}
+li:hover .midia-social {
+	opacity: 100%;
+	visibility: visible;
+}
+
+i {
+	font-size: 2em;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color:inherit;
+}
+
+.midia-social {
+	font-size: 1.7rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: .5s;
+	transition-delay: 0.2s;
+}

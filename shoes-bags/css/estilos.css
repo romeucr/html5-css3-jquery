@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: ;
+    background-color: ;
+}
+
+html {
+    font-size: 0.625em;
+    /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+main {
+    background-image: url(../img/portrait_0.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+main a {
+    font-size: 1.5rem;
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid;
+    margin-top: 15px;
+    color: inherit;
+}
+
+.cookies-info {
+    position: fixed;
+    bottom: 0;
+    background-color: RGBA(255, 255, 255, 0.8);
+    padding: 15px;
+    width: 100%;
+
+}
+
+.cookies-info p {
+    padding: 5px;
+}
+
+
+@media (min-width: 850px) {
+    main {
+        background-image: url(../img/landscape_0.jpg);
+        background-size: cover;
+    }
+
+    .cookies-info {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        background-color: white;
+        padding: 15px;
+        width: 300px;
+        background-color: RGBA(255, 255, 255, 0.8);
+
+    }
+}

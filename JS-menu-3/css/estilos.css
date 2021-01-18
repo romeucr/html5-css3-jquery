@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+    scroll-behavior: smooth;
+}
+
+#body-container {
+	width: 75%;
+	margin: 0 auto;
+}
+
+h1 {
+	padding: 15px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+#menu-and-nav {
+	position: relative;
+}
+
+#btn-menu {
+	position: absolute;
+	top: 10px;
+	right: 110%;
+	z-index: 99;
+	font-size: 3rem;
+	background-color: darkgray;
+	padding: 5px;
+	color: white;
+	cursor: pointer;
+	user-select: none;
+}
+
+#nav-bar {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	right: 0;
+	background-color: black;
+	color: white;
+	width: 150px;
+	height: 100vh;
+	transform: translateX(100%);
+	transition: .5s;
+}
+
+#nav-bar.move-nav {
+	transform: translateX(0);
+}
+
+#menu {
+	margin-top: 20px;
+}
+
+.menu-item {
+	list-style-type: none;
+}
+
+.menu-item a {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:inherit;
+	font-size: 1.5rem;
+	padding: 10px;
+}
+
+
+
+@media (min-width:650px) {
+	#body-container {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	#btn-menu {
+		display: none;
+	}
+	
+	#nav-bar {
+		position: static;
+		height: auto;
+		display: flex;
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		transform: translateX(0);
+		transition: auto;
+	}
+	
+	#menu {
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		margin-top: 0;
+	}
+	
+	p {
+		margin: 0 25px 10px;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+
+
+}

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 0.625em;
+    scroll-behavior: smooth;
+}
+
+#site-header {
+    background-image: url(../img/bg-desk.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#site-header-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 20px
+}
+
+#site-header-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+#site-header-text,
+#site-header-title {
+    color: white;
+    text-align: center;
+}
+
+#saber-mas-btn {
+    padding: 5px 15px;
+    border: 1px solid;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+#site-main {
+    margin: 30px 20px;
+}
+
+#site-main h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#site-main h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#site-main p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+    #site-header-title {
+        font-size: 5vw;
+    }
+
+    #site-header-text {
+        font-size: 2.4vw;
+    }
+}
+
+@media (min-width: 625px) {
+    #site-header-text {
+        font-size: 15rem;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1000px) {
+    #site-header-title {
+        font-size: 5rem;
+    }
+}

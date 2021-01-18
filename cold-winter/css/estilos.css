@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+}
+
+header {
+    background-color:  RGBA(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99; /*buena pratica e un bug en chrome hace com que os fixed queden abajo*/
+    padding: 15px 0;
+    left: 0; /*buena pratica quando fixar no topo e no bottom, evitando que ao meter outra coisa se mova.*/
+    top:0; /*buena pratica quando fixar no topo e no bottom, evitando que ao meter outra coisa se mova.*/
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+video {
+    min-height: 100vh; /*ocupar toda a janela do navegador*/
+    width: 100%;
+    object-fit: cover; /*para nao deformar o video*/
+}
+
+#main-text {
+    padding: 15px 25px;   
+}
+
+p {
+    margin-top: 10px;
+}
+
+@media(min-width:650px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    h1, ul {
+        margin: 0 50px;
+    }
+    
+    #main-text {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}

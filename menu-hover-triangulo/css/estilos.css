@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 1.25em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+    scroll-behavior: smooth;
+}
+
+main {
+    padding: 25px;
+}
+
+#menu {
+    margin-top: 20px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.menu-item {
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+    
+}
+
+i {
+    font-size: 3.5rem;
+    display: inline-block;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.subtitle {
+    /*display: none;*/
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 1s;
+}
+
+.sub-triangulo {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid lightgray;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.sub-text {
+    padding: 10px;
+    background-color: lightgray;
+    font-size: .8rem;
+    border-radius: 5px;
+    
+}
+
+a:hover .subtitle {
+    visibility: visible;
+    opacity: 100%;
+}
+    
+
+.fa-facebook {
+    color: #1877f2;
+}
+
+.fa-twitter-square {
+    color: rgba(29,161,242,1.00);
+}
+
+.fa-linkedin {
+    color: #0073b1;
+}
+

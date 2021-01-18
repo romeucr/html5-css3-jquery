@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+
+}
+
+.body-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #d7385e;
+    text-align: center;
+}
+
+nav {
+    background-color: #686d76;
+}
+
+nav li {
+    padding: 5px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.sec-main {
+    background-color: #373a40;
+}
+
+.sec-aula1 {
+    background-color: #19d3da;
+}
+
+.sec-aula2 {
+    background-color: #3d7ea6;
+}
+
+section {
+    padding: 15px;
+}
+
+footer {
+    background-color: #ffa5a5;
+    text-align: center;
+}
+
+/* MEDIA QUERY*/
+
+@media (min-width: 700px) {
+    .body-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        align-content: flex-end;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .sec-main {
+        flex-basis: 0;
+        flex-grow: 2;
+    }
+
+    .sec-aula1,
+    .sec-aula2 {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .sec-aula1 {
+        order: 0;
+    }
+
+    .sec-main,
+    .sec-aula2 {
+        order: 2;
+    }
+
+}

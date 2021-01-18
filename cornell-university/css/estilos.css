@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+    scroll-behavior: smooth;
+}
+
+figure {
+	width: 70%;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+figcaption {
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	font-weight: bold;
+	z-index: 99;
+}
+
+figure::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: blue;
+	transition: 1s;
+	transform-origin: left top;
+	transform: rotate(50deg) translateY(71%);
+}
+
+figure:hover::before {
+	transform: rotate(50deg) translateY(0);
+}
+
+.univ-name::after {
+	content: "";
+	display: block;
+	width: 100%;
+	border-top: 1px solid;
+}

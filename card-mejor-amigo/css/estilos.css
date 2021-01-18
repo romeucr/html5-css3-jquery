@@ -1,0 +1,66 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     color: grey;
+     background-color: darkgrey;
+
+ }
+
+.body-container {
+    max-width: 300px;
+    margin: 50px auto 0;
+    background-color: white;
+    border-radius: 15px;
+}
+
+header {
+    background-image: url(../img/dog.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.text-container {
+    text-align: justify;
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+p {
+  margin: 15px;
+  font-size: 15px;
+
+}
+
+.btn-mas-info {
+    margin: 15px;
+}
+
+.btn-mas-info a {
+    display: inline-block;
+    border: 1px solid green;
+    padding: 5px;
+    text-decoration: none;
+    color: green;
+}
+
+h1 {
+    padding-top: 210px;
+    color: white;
+    font-weight: normal;
+}
+
+.h1-bg {
+    display: block;
+    background-color: rgba(53, 188, 53, 0.75);
+    font-weight: normal;
+    padding: 2px;
+    padding-left: 20px;
+    color: white;
+    font-weight: normal;
+}

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.3rem ;
+}
+ 
+#menu {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.8rem;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-item>a {
+    text-decoration: none;
+    color: #00335b;
+    display: inline-block;
+    padding: 10px;
+}
+
+#submenu>li>a {
+    text-decoration: none;    
+    color: #fff;
+    display: inline-block;
+    height: 100%;
+}
+
+#submenu>li {
+    border-right: 1px solid;
+    margin: 15px 0;
+}
+
+#submenu>li:last-of-type {
+    border: none;
+}
+    
+.menu-item {
+    list-style-type: none;
+}
+
+#submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0079c8;
+    color: #fff;
+    padding: 0 120px;
+    display: none;
+}
+
+#submenu>.menu-item {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+#submenu>li>a * {
+    padding: 5px;
+}
+
+.menu-item:hover a {
+    color: #fff;
+    background-color: #0079c8;
+}
+.menu-item:hover #submenu {
+    display: flex;
+}
+
+#submenu h2:hover,
+#submenu p:hover {
+    background-color: #00335b;
+}

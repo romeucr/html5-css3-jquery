@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+	background-color: seagreen;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+    scroll-behavior: smooth;
+}
+
+#body-container {
+	width: 90%;
+	background-color: white;
+	margin: 20px auto;
+	border-radius: 10px
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
+	padding: 5px 10px;
+	margin: 5px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+li {
+	list-style-type: none;
+}
+
+i {
+	font-size: 2.5rem;
+	padding: 10px;
+	cursor: pointer;
+	user-select: none;
+}
+
+#menu-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#site-main {
+	padding: 20px 10px;
+}
+
+#main-title {
+	text-align: center;
+	margin: 15px 0;
+	color: seagreen;
+}
+
+#site-main p {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.menu-hidden {
+	display: none;
+}
+
+.menu-item a:hover {
+	color: seagreen;
+}
+
+@media (min-width:600px) {
+	#menu-container {
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	#menu {
+		display: flex;
+	}
+	
+	header {
+		border-bottom: 1px solid;
+	}
+	
+	#btn-menu {
+		display: none;
+	}
+	
+}

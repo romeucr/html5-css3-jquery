@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: ;
+    background-color: ;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+    scroll-behavior: smooth;
+}
+
+.iframe-container {
+    position: relative;
+    padding-top: 56.25%;
+    width: 100%;
+    border: 1px solid red
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:650px) {
+    main {
+        display: flex;
+    }
+    
+    .iframe-container {
+        position: relative;
+        padding-top: 28.13%;
+        width: 50%;
+
+    }
+}

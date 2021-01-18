@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 0.625em; /* Utilizar agora REM para todos os font-size. Tornará os textos das páginas adaptativo ao tamanho de letra que o usuário configurar no navegador. Para transformar 15px em rem, basta mover a virgula para esquerda: 1,5rem.*/
+    scroll-behavior: smooth;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-card {
+    padding: 10px;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0px 0px 14px 4px rgba(0,0,0,0.70);
+    width: 20%;
+    transition: 1s;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.cat-card:nth-child(odd) {
+    transform: rotate(-10deg);
+}
+
+.cat-card:nth-child(even) {
+    transform: rotate(5deg);
+    z-index: 1;
+}
+
+.cat-card:nth-child(odd):hover {
+    z-index: 99;
+    box-shadow: 0px 0px 14px 4px rgba(240,10,10,0.70);
+    transform: rotate(-10deg) scale(1.2);
+}
+
+.cat-card:nth-child(even):hover {
+    box-shadow: 0px 0px 14px 4px rgba(240,10,10,0.70);
+    transform: rotate(5deg) scale(1.2);
+}
